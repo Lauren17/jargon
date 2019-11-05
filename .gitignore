@@ -1,0 +1,9 @@
+# dependencies
+/jargon
+/temp
+
+# testing
+/coverage
+
+# production
+/build
