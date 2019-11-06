@@ -27,14 +27,14 @@ Add the following line of code to your functions.php file inside your sites setu
 
 ```php
 // place the code inside your sites setup function
-register_nav_menus('jargon-site' => __( 'Jargon Site Navigation' ));
+ register_nav_menus(array('jargon-site' => __( 'Jargon Site Navigation' )));
 
 
 // your setup function should look like the following example
 if ( ! function_exists( 'jargon_setup' ) ) :
        function jargon_setup(){
-           add_theme_support( 'title-tag' );
-         register_nav_menus('jargon-site' => __( 'Jargon Site Navigation' ));
+        add_theme_support( 'title-tag' );
+        register_nav_menus(array('jargon-site' => __( 'Jargon Site Navigation' )));
        }
 endif;
 
