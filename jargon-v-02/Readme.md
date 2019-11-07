@@ -18,7 +18,7 @@
 1. Select your new theme and make it the active theme.
 1. You should see the text echoed out on the landing page.
 
-## Enqueuing Styles & Scripts
+## Enqueuing Styles 
 
 Open the functions.php file. Remove the line of code you just added and add the code below. The code below runs or own custom startup function where we can add_them_support for functionality that already exists in WordPres.
 
