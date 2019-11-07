@@ -2,7 +2,7 @@
 
 ## Make A Plan
 
-As with all ui/ux development you must plan out the layout of your WP application. One of your key decisions will be how to deal with images. Having a solid plan that is inclusive of all viewports as much as possible will help you with possible art direction problems during the WP build process.
+As with all ui/ux development you must plan out your layout first. One of the key decisions you will have to make is how you are going to deal with image artwork. Having a solid plan that is inclusive of all viewports as much as possible will help you with possible art direction problems during the WP build process.
 
 ## WordPress Media Library
 
