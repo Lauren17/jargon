@@ -4,7 +4,7 @@
 
 In the jargon site example the front page has several examples or custom post types, the featured videos, articles and the team members. If you take a look back at the single.php template for a single post it will not help us build out the pages we need to display the contents of an article. So we need a work around.
 
-Wordpress has this built in for us and when we use custom post types. There are plugins that do all the heavy lifting and make a difficult task easy. First let's show you how this is done by hand before we use a plugin. You can take a look at all the properties of the [register_post_type()](https://codex.wordpress.org/Function_Reference/register_post_type) on the WordPress codex site to get a better understanding of all the options at your disposal.
+Wordpress has this built in for us and when we use custom post types. There are plugins that do all the heavy lifting and make a difficult task easy. First let's show you how this is done by hand before we use a plugin. You can take a look at all the properties of the [register_post_type()](https://codex.wordpress.org/Function_Reference/register_post_type) on the WordPress codex site to get a better understanding of all the available options.
 
 > Copy the following code to your functions.php file and upload it. Make sure you increase the version number in your style.css so you know what version of the site your working on. When you get to the dashboard make sure and change appearance>theme>jargon 5
 
