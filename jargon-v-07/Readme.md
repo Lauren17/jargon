@@ -21,15 +21,10 @@ switch to the old post editor.
 ```
 
 ## Custom Post Type UI
- 
+ Fixes the Auto Draft problem from removing the title from the post editor.
 
 ```php
-//function creates a custom post type of movies
-function create_post_type_movies()
-{
-    // creates label names for the post type in the dashboard the post panel and in the toolbar.
  
-}
 // Change default "Enter Title Here" text 
 // for admin area based on CPT
 add_action('admin_head', 'hide_wp_title_input');
