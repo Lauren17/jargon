@@ -21,7 +21,11 @@ function jargon_styles()
 
 add_action('wp_enqueue_scripts', 'jargon_styles');
  
- 
+function jargon_scripts () {
+  wp_enqueue_script("jargon-mobile-menu",  get_template_directory_uri() . "/js/mobile-menu.js");
+}
+
+add_action('wp_enqueue_scripts', 'jargon_scripts');
 
 
 ?>
