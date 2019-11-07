@@ -18,7 +18,7 @@
 
 
 ## Single Post Template
-In order to display a single post you have to create a template that will display the post content. The default template used for displaying a post is single.php. You can read more about this template and yes you guessed it at the [Theme Developers Handbook](https://developer.wordpress.org/themes/template-files-section/post-template-files/#single-php)
+To display a single post you have to create a template that will display the post content. The default template used for displaying a post is single.php. You can read more about this template and yes you guessed it at the [Theme Developers Handbook](https://developer.wordpress.org/themes/template-files-section/post-template-files/#single-php)
 
 1. Create a file in the root of your theme folder called single.php.
 1. Copy and paste the code below into your single.php template.
