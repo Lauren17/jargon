@@ -1,0 +1,21 @@
+/* 
+---------------------------------------------------------------------------------------
+MAIN PAGE HEADER
+-------------------------------------------------------------------------------------
+*/
+.main-page-header {
+  background: tomato;
+  color: white;
+  text-align: center;
+  padding: 10rem 0;
+}
+.logo {
+  width: calc(3rem + 5vh);
+  max-width: 250px;
+}
+.title {
+  font-size: calc(3rem + 2vmin);
+}
+.tagline {
+  font-size: calc(1.5rem + 1vw);
+}

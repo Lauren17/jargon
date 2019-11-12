@@ -1,0 +1,265 @@
+/*
+Theme Name: Jargon Final Site
+Theme URI:  
+Author: James Foley
+Author URI: https://www.dominait.me
+Description:   Completed Jargon Site
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI:  
+Text Domain: jargon
+Tags: Setting Up WordPress
+*/
+body {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 101;
+  -webkit-box-shadow: 0 0 5px 0 grey;
+          box-shadow: 0 0 5px 0 grey;
+  padding: 0.5rem 1rem;
+  position: relative;
+  color: #bfbfbf;
+}
+
+.icon-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+a.home-link {
+  text-decoration: none;
+  color: #adacac;
+  font-weight: 700;
+}
+
+.mobile-menu-icon {
+  width: 1.5rem;
+  vertical-align: middle;
+}
+
+.login {
+  display: none;
+}
+
+.list-view-container {
+  display: none;
+}
+
+.login-button {
+  -webkit-box-shadow: 0 0 5px 0 grey;
+          box-shadow: 0 0 5px 0 grey;
+  padding: 0.5rem 1rem;
+  font-size: 0.6825rem;
+  background: transparent;
+  color: #444444;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* 
+---------------------------------------------------------------------------------------
+MOBILE MENU STYLES
+-------------------------------------------------------------------------------------
+*/
+#mobile-menu-items {
+  width: 100%;
+  height: 65vh;
+}
+
+.mobile-menu-items {
+  width: 100%;
+  background: #ececec;
+  border-bottom: 1px solid #e6e6e6;
+  -webkit-box-shadow: 0 0 5px 0 #dfdfdf;
+          box-shadow: 0 0 5px 0 #dfdfdf;
+  padding: 2rem 1rem;
+  z-index: 100;
+}
+
+/* 
+---------------------------------------------------------------------------------------
+Break Point Styles Switch between drop down menu and  list of links
+-------------------------------------------------------------------------------------
+*/
+@media (min-width: 600px) {
+  .mobile-menu {
+    display: none;
+  }
+  .login {
+    display: block;
+  }
+  .list-view-container {
+    display: block;
+  }
+  .list-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu-item {
+    margin: 0 3rem;
+  }
+  .menu-item a {
+    text-decoration: none;
+    color: #444;
+  }
+  .menu-item a:hover {
+    color: tomato;
+  }
+}
+
+/* 
+---------------------------------------------------------------------------------------
+MAIN PAGE HEADER
+-------------------------------------------------------------------------------------
+*/
+.main-page-header {
+  background: tomato;
+  color: white;
+  text-align: center;
+  padding: 10rem 0;
+}
+
+.logo {
+  width: calc(3rem + 5vh);
+  max-width: 250px;
+}
+
+.title {
+  font-size: calc(3rem + 2vmin);
+}
+
+.tagline {
+  font-size: calc(1.5rem + 1vw);
+}
+
+.article-card {
+  color: #444;
+}
+
+.article-header {
+  display: block;
+  padding: 1.5rem 0;
+  background: #3db0f7;
+  text-align: center;
+  color: white;
+}
+
+.article-header h1 {
+  font-size: calc(1rem + 3vw);
+  max-width: 500px;
+}
+
+.article-header img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.single-copy {
+  margin-bottom: 3.5rem;
+}
+
+.single-copy .copy p {
+  margin-bottom: 1rem;
+}
+
+.single-copy strong {
+  font-size: 1.7rem;
+}
+
+.single-copy .copy {
+  margin: 0.5rem;
+}
+
+.single-copy img {
+  display: block;
+  margin: 0 auto;
+}
+
+.article-card-image {
+  max-width: 350px;
+  padding-left: 1rem;
+  padding: 1px;
+}
+
+@media (min-width: 720px) {
+  .article-header {
+    padding: 4rem 0;
+  }
+  .article-header figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  main {
+    max-width: 960px;
+    margin: 2rem auto;
+  }
+  .single-copy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .single-copy strong {
+    font-size: 2.2rem;
+  }
+  .copy {
+    padding: 2.3rem;
+  }
+}
+
+.post-container {
+  max-width: 960px;
+  margin: 2rem auto;
+}
+
+.post-container .post-header {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: crimson;
+}
+
+.post-container .post-content {
+  font-size: 1rem;
+  color: #666;
+}
+
+.post-container .post-content p {
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
