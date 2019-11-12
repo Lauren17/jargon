@@ -5,7 +5,6 @@ if (!function_exists('jargon_setup')) {
     function jargon_setup()
     {
       add_theme_support('title_tag');
-      add_theme_support( 'post-thumbnails' );
       register_nav_menus(array('jargon-site' => __( 'Jargon Site Navigation' )));
     }
 }
@@ -30,7 +29,7 @@ add_action('wp_enqueue_scripts', 'jargon_scripts');
 
 
 
-remove_filter('the_content', 'wpautop');
+ 
 
 
 ?>
