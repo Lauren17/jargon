@@ -25,3 +25,19 @@ Create
 add_action('after_setup_theme', "jargon_setup");
 add_filter('use_block_editor_for_post', '__return_false', 10);
 ```
+
+## Category Template
+category-css.php
+category.php ----if test category------load template
+
+```php 
+<?php
+if (have_posts()):
+    while (have_posts()):
+        the_post();
+        echo "each item";
+    endwhile; // end while
+endif; // end if
+?>
+
+```
