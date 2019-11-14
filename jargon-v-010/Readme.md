@@ -53,3 +53,11 @@ Add menu name to the header.php wp_nav_menu(array('menu)=>'name of the menu')
 ## Template Tags
 ## Resources
 [Full List of Template Tags](https://developer.wordpress.org/themes/references/list-of-template-tags/)
+
+## Structure Your Document Correctly.
+where will you place the page container
+where will the page header go
+where will the nav go
+
+# the_title()
+gives you the title
