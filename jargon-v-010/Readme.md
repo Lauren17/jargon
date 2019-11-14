@@ -35,7 +35,7 @@ category.php ----if test category------load template
 if (have_posts()):
     while (have_posts()):
         the_post();
-        echo "each item";
+        echo "<p> new post item <p>";
     endwhile; // end while
 endif; // end if
 ?>
@@ -49,3 +49,7 @@ Go to the menu panel create a menu with three categores
 1. javascript
 
 Add menu name to the header.php wp_nav_menu(array('menu)=>'name of the menu')
+
+## Template Tags
+## Resources
+[Full List of Template Tags](https://developer.wordpress.org/themes/references/list-of-template-tags/)
