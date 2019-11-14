@@ -22,7 +22,7 @@
        </li> 
    
        <li class="list-view-container">
-            <?php wp_nav_menu(array('menu' => 'Jargon Menu', 'menu_class'=> 'list-view',));?>
+            <?php wp_nav_menu(array('menu' => 'categories menu', 'menu_class'=> 'list-view',));?>
        </li>
              
     
@@ -41,7 +41,7 @@
 
 <aside id="mobile-menu-items" class="mobile-menu-items ">
      <p> This Is Where You Will Add Your Navigation for the drop down menu</p>
-     <?php wp_nav_menu(array('menu'=>'Pages Menu')); ?>
+     <?php wp_nav_menu(array('menu'=>'categories menu')); ?>
 </aside>
 
    

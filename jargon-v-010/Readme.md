@@ -41,3 +41,11 @@ endif; // end if
 ?>
 
 ```
+
+## Create A Categories Menu
+Go to the menu panel create a menu with three categores 
+1. html
+1. css
+1. javascript
+
+Add menu name to the header.php wp_nav_menu(array('menu)=>'name of the menu')
