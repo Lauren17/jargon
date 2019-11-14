@@ -59,5 +59,18 @@ where will you place the page container
 where will the page header go
 where will the nav go
 
-# the_title()
-gives you the title
+## Dealing with images
+---> set in your function.php  images arra
+
+----> 
+inside the loop
+```php
+   <?php  the_post_thumbnail('square-150')  ?>
+```
+functions.php
+```php
+
+
+ add_image_size( 'square-150', 150, 150, true );
+
+ ```
