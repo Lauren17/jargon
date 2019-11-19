@@ -1,4 +1,4 @@
-# <img src="./assets/images/wordpress-water-mark.png" width="100" align="center"> WordPress Custom Post Types
+# <img src="./assets/images/wordpress-water-mark.png" width="100" align="center"> WordPress Workgin with Post and Pages
 
 ## Creating A Custom Post Using Code
 
