@@ -1,0 +1,5 @@
+What Is React
+
+Nowadays, the amount of Javascript frameworks and libraries are insane. Once I read in Twitter from a guy who was playing with his co workers to say a name or a word, and if there exists a Javascript framework named like that, the person has to drink a shot. Hardcore.
+But today I’m not going to talk about all of them but one that has caught my attention in the past month: ReactJS.
+If you know about design patterns, you might have listened about the MVC pattern (Model-View-Controller). If not, all you have to now right now is that React works as the V in MVC. And what does it mean? you might be asking yourself. Well, with React, you can design all the front-end part of your application. That means, you can create easily all the user interface of your application.

@@ -1,0 +1,5 @@
+Post Title: CSS Lazy Loading
+
+Images are critical. Whether it is marketing banners, product images or logos, it is impossible to imagine a website without images. Sadly though, images are often heavy files making them the single biggest contributor to the page bloat. According the HTTP Archive’s State of Images report, the median page size on desktops is 1511 KB and images account for nearly 45% (650 KB) of that total.
+
+That said, it’s not like we can simply do away with images. They’re too important to the overall user experience. Instead, we need to make our web pages load really fast with them. In this guide, we will cover all of the ins and outs of lazy loading images, a technique that helps improve the time it takes for a web page to load by deferring image loads until they are needed.
