@@ -6,7 +6,7 @@
 
    }
 
-   add_theme_support("after_setup", "setup_jargon");
+   add_action( 'after_setup_theme', "setup_jargon");
 
 
 
