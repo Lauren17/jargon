@@ -1,3 +1,4 @@
+# <img src="./assets/images/wordpress-water-mark.png" width="100" align="center"> WordPress With The Header Template
 
 ## Creating A Post
 1. Navigate to your site dashboard.
