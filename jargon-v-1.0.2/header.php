@@ -19,3 +19,4 @@
        <h2>Jabber</h2>
        <p>tagline</p>
     </header>
+    <main>
