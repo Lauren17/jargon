@@ -3,36 +3,23 @@
  get_template_part('template-parts/headers/front-page', 'header');
 
 ?>
- <section class="featured-articles">
+ <section class="front-page-section">
 
- <?php
-$args = array(  
-     'post_type' => 'articles',
-     'posts_per_page' => 4, 
-     'orderby' => 'rand', 
- );
- $loop = new WP_Query( $args ); 
- $count = 0;
- while ( $loop->have_posts() ) : $loop->the_post(); 
- $class =  array('feature-1', 'feature-2','feature-3', 'feature-4');
- $currentClass = $class[$count];
- $header = get_field('article_header', get_the_ID());
- $title= $header['title'];
- $tagline = $header['tagline'];
- $link = get_the_permalink();
- 
- $count++;
- ?>
-  <a class="featured-article <?php echo $currentClass; ?>" href="<?php echo $link ?>">
-  <h3><?php echo $title;   ?></h3>
-      <p><?php echo $tagline; ?></p>
-  </a>
- <?php 
-  endwhile;
-?>
- 
+     <header class="section-header">
+       <p class="focus-on">focus on</p>
+        <h2 class="section-title">Featured Articles</h2>
+        <div class="heading-underline"></div>
+     </header>
 
- </section>
+     <div class="featured-articles">
+     
+      <a class="feature-article feature-1" href="http://some-wordpress-url/articles/now-and-then/">
+      <h3>Flexbox vs Grid</h3>
+          <p>making better use of layout systems</p>
+      </a>
+
+      </div>
+  </section>
  
  
 <?php get_footer(); ?>
