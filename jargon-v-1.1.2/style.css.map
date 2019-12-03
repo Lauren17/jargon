@@ -7,7 +7,7 @@
         "scss/_site-nav.scss",
         "scss/_front-page.scss",
         "scss/_articles.scss",
-        "scss/single-post.scss"
+        "scss/_single-post.scss"
     ],
     "names": [],
     "file": "style.css"
