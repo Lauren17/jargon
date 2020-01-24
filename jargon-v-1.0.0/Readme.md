@@ -83,3 +83,30 @@ Text Domain: theme name one word
 Tags: Used to find you theme when a users searches in the themes panel.
 */
 ```
+
+## Setting Up the Functions File and Enqueuing your Styles & Scripts
+
+1. Add a ```functions.php``` file in the root of your theme directory.
+2. You could either enqueue the styles and scripts separately or in a function. Please see the [WordPress Developer Handbook](https://developer.wordpress.org/themes/basics/including-css-javascript/) on how to enqueue separately or in a function.
+3. Below the styles and scripts are enqueued in a function.
+
+``` php
+<?php 
+  //adds support to generate a title tag base on your pages and posts. 
+   if(! function_exists('setup_addthemenamehere')){
+       // wordpress functionality
+       add_theme_support('title_tag');
+   }
+   add_action( 'after_setup_theme', "setup_addthemenamehere");
+
+//this function will add all of your styles and scripts, everything from Google Fonts to resets.
+function themenamehere_enqueue_styles() {
+  //styles
+	wp_enqueue_style( 'style', get_stylesheet_uri() );
+	
+  //scripts
+   //wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array ( 'jquery' ), 1.1, true);
+}
+add_action('wp_enqueue_scripts', 'addthemenamehere_enqueue_styles');
+
+```
