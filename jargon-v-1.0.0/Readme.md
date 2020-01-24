@@ -102,7 +102,43 @@ Tags: Used to find you theme when a users searches in the themes panel.
 //this function will add all of your styles and scripts, everything from Google Fonts to resets.
 function themenamehere_enqueue_styles() {
   //styles
-	wp_enqueue_style( 'style', get_stylesheet_uri() );
+  wp_enqueue_style( 'style', get_stylesheet_uri() );
+	
+  //scripts
+   //wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array ( 'jquery' ), 1.1, true);
+}
+add_action('wp_enqueue_scripts', 'addthemenamehere_enqueue_styles');
+
+```
+
+### Loading Exeternal styles from a directory
+``` php
+
+function themenamehere_enqueue_styles() {
+  //styles
+  wp_enqueue_style( 'style', get_stylesheet_uri() );
+  
+  //Loading an external style from a directory
+  wp_enqueue_style( 'modern-reset', get_template_directory_uri() . '/assets/css/modern-reset.css',false,'1.0','all');
+	
+  //scripts
+   //wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array ( 'jquery' ), 1.1, true);
+}
+add_action('wp_enqueue_scripts', 'addthemenamehere_enqueue_styles');
+
+```
+### Loading Exeternal CSS Files (Google Fonts)
+``` php
+
+function themenamehere_enqueue_styles() {
+  //styles
+  wp_enqueue_style( 'style', get_stylesheet_uri() );
+  
+  //Loading an external style from a directory
+  wp_enqueue_style( 'modern-reset', get_template_directory_uri() . '/assets/css/modern-reset.css',false,'1.0','all');
+  
+  //Google Font
+  wp_enqueue_style( 'Roboto', 'https://fonts.googleapis.com/css?family=Roboto&display=swap', array(), '1.0' );
 	
   //scripts
    //wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array ( 'jquery' ), 1.1, true);
